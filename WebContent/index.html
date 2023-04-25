@@ -9,14 +9,134 @@
 Welcome to Fablix!
 <p id="sessionID"></p>
 <p id="lastAccessTime"></p>
-<form ACTION="#" id="cart" METHOD="post">
-    <label>Item Purchased</label>
-    <br>
+
+<!--Task 2: Search Form-->
+<form id="search_form" method="get" action="#">
+    <label>Title: </label>
     <label>
-        <input name="item" required="required" type="text">
+        <input id="title_search_bar" class="autocomplete-searchbox" name="title" placeholder="Enter movie title" type="text">
     </label>
-    <input type="submit" VALUE="add">
+
+    <label>Year: </label>
+    <label>
+        <input name="year" placeholder="Enter movie year" type="text">
+    </label>
+
+    <label>Director: </label>
+    <label>
+        <input name="director" placeholder="Enter director name" type="text">
+    </label>
+
+    <label>Star's Name: </label>
+    <label>
+        <input name="star_name" placeholder="Enter star name" type="text">
+    </label>
+    <input type="submit" value="Search">
 </form>
+
+
+
+<!-- Task 2: Browse by genres -->
+<div class = "text-center">
+<h3 class = "text-center"> Browse by movie genres</h3>
+</div>
+<div class="container mt-4">
+    <div class="row">
+        <div class = "text-center col-md-3 col-sm-6 col-xs-12">
+            <u1 class = "list-unstyled">
+                <li><a href="movie.html?genre=Action">Action</a></li>
+                <li><a href="movie.html?genre=Biography">Biography</a></li>
+                <li><a href="movie.html?genre=Drama">Drama</a></li>
+                <li><a href="movie.html?genre=Horror">Horror</a></li>
+                <li><a href="movie.html?genre=Reality-TV">Reality-TV</a></li>
+                <li><a href="movie.html?genre=Thriller">Thriller</a></li>
+            </u1>
+        </div>
+        <div class = "text-center col-md-3 col-sm-6 col-xs-12">
+            <u1 class = "list-unstyled">
+                <li><a href="movie.html?genre=Adult">Adult</a></li>
+                <li><a href="movie.html?genre=Comedy">Comedy</a></li>
+                <li><a href="movie.html?genre=Family">Action</a></li>
+                <li><a href="movie.html?genre=Music">Music</a></li>
+                <li><a href="movie.html?genre=Romance">Romance</a></li>
+                <li><a href="movie.html?genre=War">War</a></li>
+            </u1>
+        </div>
+        <div class = "text-center col-md-3 col-sm-6 col-xs-12">
+            <u1 class = "list-unstyled">
+                <li><a href="movie.html?genre=Adventure">Adventure</a></li>
+                <li><a href="movie.html?genre=Crime">Crime</a></li>
+                <li><a href="movie.html?genre=Fantasy">Fantasy</a></li>
+                <li><a href="movie.html?genre=Musical">Musical</a></li>
+                <li><a href="movie.html?genre=Sci-Fi">Sci-Fi</a></li>
+                <li><a href="movie.html?genre=Western">Western</a></li>
+            </u1>
+        </div>
+        <div class = "text-center col-md-3 col-sm-6 col-xs-12">
+            <u1 class = "list-unstyled">
+                <li><a href="movie.html?genre=Animation">Animation</a></li>
+                <li><a href="movie.html?genre=Documentary">Documentary</a></li>
+                <li><a href="movie.html?genre=History">History</a></li>
+                <li><a href="movie.html?genre=Mystery">Mystery</a></li>
+                <li><a href="movie.html?genre=Sport">Sport</a></li>
+            </u1>
+        </div>
+    </div>
+</div>
+
+<!-- Task 2: Browse by title -->
+<div class = "text-center mt-5"">
+<h3 class = "text-center mt-3"> Browse by movie title</h3>
+</div>
+<div class="container mt-3">
+    <div class = "row justify-content-center">
+        <div class = "text-center">
+            <u1 class = "list-unstyle">
+                <a href="movie.html?title=A">A</a>
+                <a href="movie.html?title=B">B</a>
+                <a href="movie.html?title=C">C</a>
+                <a href="movie.html?title=D">D</a>
+                <a href="movie.html?title=E">E</a>
+                <a href="movie.html?title=F">F</a>
+                <a href="movie.html?title=G">G</a>
+                <a href="movie.html?title=H">H</a>
+                <a href="movie.html?title=I">I</a>
+                <a href="movie.html?title=J">J</a>
+                <a href="movie.html?title=K">K</a>
+                <a href="movie.html?title=L">L</a>
+                <a href="movie.html?title=M">M</a>
+                <a href="movie.html?title=O">O</a>
+                <a href="movie.html?title=P">P</a>
+                <a href="movie.html?title=Q">Q</a>
+                <a href="movie.html?title=R">R</a>
+                <a href="movie.html?title=S">S</a>
+                <a href="movie.html?title=T">T</a>
+                <a href="movie.html?title=U">U</a>
+                <a href="movie.html?title=V">V</a>
+                <a href="movie.html?title=W">W</a>
+                <a href="movie.html?title=X">X</a>
+                <a href="movie.html?title=Y">Y</a>
+                <a href="movie.html?title=Z">Z</a>
+            </u1>
+        </div>
+    </div>
+    <div class ="row justify-content-center">
+        <div class = "text-center">
+            <a href="movie.html?title=0">0</a>
+            <a href="movie.html?title=1">1</a>
+            <a href="movie.html?title=2">2</a>
+            <a href="movie.html?title=3">3</a>
+            <a href="movie.html?title=4">4</a>
+            <a href="movie.html?title=5">5</a>
+            <a href="movie.html?title=6">6</a>
+            <a href="movie.html?title=7">7</a>
+            <a href="movie.html?title=8">8</a>
+            <a href="movie.html?title=9">9</a>
+            <a href="movie.html?title=*">*</a>
+        </div>
+    </div>
+</div>
+
 <div id="item_list"></div>
 
 <!-- include your own JS file -->
